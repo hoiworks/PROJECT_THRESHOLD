@@ -376,13 +376,6 @@ h1 {
 }
 .lecture-header, .lecture-kind, .lecture-details { align-self: center; }
 .lecture p { margin: 0; }
-.lecture-number {
-  color: #777671;
-  font-size: 9px;
-  letter-spacing: .24em;
-  padding-left: .24em;
-  line-height: 1.8;
-}
 .lecture-title {
   margin: 20px 0 15px;
   padding-left: .28em;

@@ -648,7 +648,7 @@ enterButton.addEventListener("click", () => {
     film.pause();
     invitation.dispatchEvent(new CustomEvent("threshold:lecture-visible", { bubbles: true }));
 
-    const delays = [0, 160, 320, 500, 750, 1100];
+    const delays = [160, 320, 500, 750, 1100];
     await Promise.all([...lecture.querySelectorAll(".lecture-reveal")].map((element, index) =>
       element.animate(reducedMotion.matches
         ? [{ opacity: 0 }, { opacity: 1 }]
