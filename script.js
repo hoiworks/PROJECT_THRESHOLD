@@ -294,29 +294,10 @@ function prepareFilm() {
 
 // data-phase: invitation | opening | waiting-for-film | film-error | opened.
 // "threshold:opened" fires only after the panels finish and a frame is ready.
-function requestMobileFullscreen() {
-  if (!window.matchMedia("(hover: none) and (pointer: coarse)").matches) return;
-  if (document.fullscreenElement || document.webkitFullscreenElement ||
-      document.mozFullScreenElement || document.msFullscreenElement) return;
-
-  const root = document.documentElement;
-  const request = root.requestFullscreen || root.webkitRequestFullscreen ||
-    root.mozRequestFullScreen || root.msRequestFullscreen;
-  if (typeof request !== "function") return;
-
-  try {
-    const fullscreen = request.call(root);
-    if (fullscreen && typeof fullscreen.catch === "function") fullscreen.catch(() => {});
-  } catch {
-    // Fullscreen is progressive enhancement; the invitation continues normally.
-  }
-}
-
 async function openInvitation() {
   if (!["invitation", "film-error"].includes(invitation.dataset.phase)) return;
   const isRetry = invitation.dataset.phase === "film-error";
   if (!isRetry) {
-    requestMobileFullscreen();
     unlockAudioAssets();
     startAmbience();
     playOpenSound();
