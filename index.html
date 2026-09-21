@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#050505" />
+    <meta name="description" content="THE SHIFT — A personal invitation. AI × REALTIME × CAREER." />
+    <title>THE SHIFT — PROJECT THRESHOLD</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="invitation" aria-label="An invitation to THE SHIFT" data-phase="invitation">
+      <header class="identity reveal">
+        <h1>THE SHIFT</h1>
+        <p>AI × REALTIME × CAREER</p>
+      </header>
+
+      <div class="message reveal">
+        <p>YOU HAVE BEEN<br /><span>INVITED.</span></p>
+      </div>
+
+      <footer class="invitation-action reveal">
+        <button class="open" type="button" aria-label="Open your invitation">
+          <span class="open-label">OPEN</span>
+          <span class="open-line" aria-hidden="true"></span>
+        </button>
+      </footer>
+      <div class="threshold-transition" aria-hidden="true" hidden>
+        <video class="promo-film" playsinline preload="auto" disablepictureinpicture aria-label="THE SHIFT promo film">
+          <source src="assets/video/THRESHOLD_EDU_v004_front_with_sound.mp4" type="video/mp4" />
+        </video>
+        <div class="ending-white" aria-hidden="true"></div>
+        <div class="threshold-panel threshold-panel--left"></div>
+        <div class="threshold-panel threshold-panel--right"></div>
+        <div class="threshold-seam"></div>
+        <button class="film-retry" type="button" hidden>영상 재생 다시 시도</button>
+        <section class="film-ending" aria-label="An invitation to enter" hidden>
+          <p class="ending-title">THE DOOR IS OPEN.</p>
+          <p class="ending-question" lang="ko">AI 시대,<br />당신은 무엇을 만들 것인가?</p>
+          <button class="enter" type="button" aria-label="Enter THE SHIFT" disabled>
+            <span class="enter-label">ENTER</span>
+            <span class="enter-line" aria-hidden="true"></span>
+          </button>
+        </section>
+      </div>
+      <section class="lecture" aria-labelledby="lecture-title" tabindex="-1" hidden>
+        <div class="lecture-content">
+          <header class="lecture-header">
+            <p class="lecture-number lecture-reveal">THRESHOLD 01</p>
+            <h2 id="lecture-title" class="lecture-title lecture-reveal">THE SHIFT</h2>
+            <p class="lecture-subtitle lecture-reveal">AI × REALTIME × CAREER</p>
+          </header>
+          <p class="lecture-kind lecture-reveal">SPECIAL LECTURE</p>
+          <footer class="lecture-details">
+            <div class="lecture-facts lecture-reveal">
+              <p class="lecture-date"><time datetime="2026-10-08">OCTOBER 8, 2026</time></p>
+              <p class="lecture-time">18:30 — 20:30</p>
+              <p class="lecture-location">HONGIK UNIVERSITY<br />SEJONG CAMPUS</p>
+            </div>
+            <p class="lecture-message lecture-reveal" lang="ko">AI 시대,<br />새로운 가능성의 문을<br />함께 열어갑니다.</p>
+          </footer>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
